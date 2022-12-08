@@ -9,6 +9,7 @@
 
 body{
     background-image: url("fish.jpg");
+    background-repeat: no-repeat;
     height: 1920px;
     width: 1080px;
 
@@ -16,6 +17,8 @@ body{
 
 header {
     border: 3px solid black;
-    width: fill;
+    width: 1080px;
+    position: -webkit-sticky;
+    justify-content: center;
 }
 
