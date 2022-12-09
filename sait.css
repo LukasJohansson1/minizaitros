@@ -11,36 +11,79 @@
 body{
     background-image: url("fish.jpg");
     background-repeat: no-repeat;
-    height: 1920px;
+    height: 1080px;
     width: auto;
 
 }
 
-.boing{
-    position: -webkit-sticky;
-    position: sticky;
-    display: flexbox;
+#rub{
+    margin-left: 30px;
+    margin-right: 30px;
+    font-size: 50px;
+    color: white;
+    align-items: center !important;
+    justify-content: center !important;
+
 }
 
 .topbar {
-    background-color: #6f95dd;
+    background-color: #324376;
     overflow: hidden;
     position: -webkit-sticky;
 	position: sticky;
-	top: 0;
+	top: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
   }
 
 .topbar a {
     float: right;
     color: #f2f2f2;
     text-align: center;
-    padding: 18px 22px;
+    padding: 20px 22px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 18px;
 }
 
 .topbar a:hover {
-    background-color: #ddd;
+    background-color: lightgray;
     color: black;
 }
 
+.container{
+    display: flex;
+    flex-direction: row;
+}
+.giffers {
+    margin-left: 3%;
+    height: 225px;
+    width: auto;
+    border-radius: 4%;
+}
+p {
+    font-size: 19px;
+    color: black;
+}
+
+.box{
+    border: solid black 3px;
+    width: 340px;
+    background-color: #324376;
+    border-radius: 3%;
+    height: 340px;
+}
+
+#logo{
+    height: 50px;
+    width: auto;
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.rum {
+    margin-top: 325px;
+}
