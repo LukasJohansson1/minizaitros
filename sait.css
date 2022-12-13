@@ -16,6 +16,13 @@ body{
 
 }
 
+body2{
+    background-image: url("fishes.jpg");
+    background-repeat: no-repeat ;
+    height: 1080px;
+    width: auto;
+}
+
 #rub{
     margin-left: 30px;
     margin-right: 30px;
