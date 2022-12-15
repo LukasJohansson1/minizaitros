@@ -42,6 +42,7 @@ section{
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
+    height: 8vh;
   }
 
 .topbar a {
@@ -95,8 +96,9 @@ p {
 
 .box{
     border: solid black 3px;
-    width: 265px;
-    background-color: #324376;
+    padding: 5px;
+    width: 290px;
+    background-color: white;
     border-radius: 3%;
     height: fit-content;
     margin-top: 10px;
@@ -114,21 +116,17 @@ p {
     margin-right: 10px;
     margin-left: 10px;
 }
-h2 {
-    font-size: 35px;
-}
 
-h3 {
-    font-size: 35px;
-}
-h4 {
+.storlek {
     font-size: 35px;
 }
 
 .rule {
     width: auto;
-    height: 1000px;
-    background-color: lightblue;
+    height: 100vh;
+    background-image: url("beach.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
     display: flex;
     justify-content: center;
 }
@@ -136,11 +134,23 @@ h4 {
 h5 {
     margin-top: 40px;
     font-size: 50px;
+    margin-bottom: 40px;
 }
 
 .box2 {
     border: solid black 3px;
     height: fit-content;
+    padding: 5px;
     margin-top: 50px;
-    width: 700px;
+    width: 950px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+li {
+    font-size: 18px;
+    list-style:circle;
+    margin-bottom: 3px;
+    
 }
