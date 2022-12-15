@@ -9,12 +9,12 @@
 
 
 body{
-    background-image: url("fish.jpg");
+    background-image: url("jungle.jpg");
     background-repeat: no-repeat;
 }
 
 section{
-    background-image: url("fishes.jpg");
+    background-image: url("amazon.jpg");
     background-repeat: no-repeat ;
 }
 
@@ -27,7 +27,7 @@ section{
 }
 
 .topbar {
-    background-color: #324376;
+    background-color: rgb(27, 204, 27);
     overflow: hidden;
     position: -webkit-sticky;
 	position: sticky;

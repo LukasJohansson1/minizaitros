@@ -4,8 +4,76 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Book Fish world</title>
+    <title>Guided tours</title>
     <link rel="stylesheet" href="formis.css" />
   </head>
-  <body></body>
+  <body>
+    <header>
+      <h1>Tour booking Animal Kingdom</h1>
+    </header>
+    <form action="reservation.php" method="post">
+      <div class="elem-group">
+        <label for="name">Name</label>
+        <input
+          type="text"
+          id="name"
+          name="visitor_name"
+          placeholder=""
+          pattern="[A-Z\sa-z]{3,20}"
+          required
+        />
+      </div>
+      <div class="elem-group">
+        <label for="email">Your E-mail</label>
+        <input
+          type="email"
+          id="email"
+          name="visitor_email"
+          placeholder="john.doe@email.com"
+          required
+        />
+      </div>
+      <div class="elem-group">
+        <label for="phone">Your Phone</label>
+        <input
+          type="tel"
+          id="phone"
+          name="visitor_phone"
+          placeholder="498-348-3872"
+          pattern="(\d{3})-?\s?(\d{3})-?\s?(\d{4})"
+          required
+        />
+      </div>
+      <hr />
+      <div class="elem-group inlined">
+        <label for="adult">People coming</label>
+        <input
+          type="number"
+          id="adult"
+          name="total_adults"
+          placeholder=""
+          min="1"
+          required
+        />
+      </div>
+      <div class="container">
+        <div class="elem-group inlined">
+          <label for="checkout-date">Check-out Date</label>
+          <input type="date" id="checkout-date" name="checkout" required />
+        </div>
+      </div>
+
+      <hr />
+      <div class="elem-group">
+        <label for="message">Anything Else?</label>
+        <textarea
+          id="message"
+          name="visitor_message"
+          placeholder="Tell us anything else that might be important."
+          required
+        ></textarea>
+      </div>
+      <button type="submit">Book The Rooms</button>
+    </form>
+  </body>
 </html>
