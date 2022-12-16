@@ -58,12 +58,11 @@ section{
     display: flex;
     width: 900px;
     flex-direction: row;
-    margin-top: 300px;
+    margin-top: 250px;
     margin-right: auto;
     margin-left: auto;
     justify-content: center;
     align-items: center;
-    margin-bottom: 75px;
 
 }
 

@@ -8,9 +8,11 @@
     <link rel="stylesheet" href="formis.css" />
   </head>
   <body>
-    <header>
-      <h1>Tour booking Animal Kingdom</h1>
-    </header>
+    <div class="container">
+      <header>
+        <h1>Tour booking Animal Kingdom</h1>
+      </header>
+    </div>
     <form action="reservation.php" method="post">
       <div class="elem-group">
         <label for="name">Name</label>
@@ -18,7 +20,7 @@
           type="text"
           id="name"
           name="visitor_name"
-          placeholder=""
+          placeholder="John Doe"
           pattern="[A-Z\sa-z]{3,20}"
           required
         />
@@ -30,17 +32,6 @@
           id="email"
           name="visitor_email"
           placeholder="john.doe@email.com"
-          required
-        />
-      </div>
-      <div class="elem-group">
-        <label for="phone">Your Phone</label>
-        <input
-          type="tel"
-          id="phone"
-          name="visitor_phone"
-          placeholder="498-348-3872"
-          pattern="(\d{3})-?\s?(\d{3})-?\s?(\d{4})"
           required
         />
       </div>
@@ -73,7 +64,7 @@
           required
         ></textarea>
       </div>
-      <button type="submit">Book The Rooms</button>
+      <button type="submit">Book</button>
     </form>
   </body>
 </html>
