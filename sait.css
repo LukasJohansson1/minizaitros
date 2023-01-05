@@ -31,7 +31,7 @@ section{
     overflow: hidden;
     position: -webkit-sticky;
 	position: sticky;
-	top: 22px;
+	top: 0px;
     margin-right: 20px;
     margin-left: 20px;
     display: flex;
@@ -118,6 +118,7 @@ p {
     background-repeat: no-repeat;
     display: flex;
     justify-content: center;
+    height: 900px;
 }
 
 h5 {

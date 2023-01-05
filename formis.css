@@ -5,9 +5,10 @@
 }
 
 body {
-    width: 500px;
+    width: 550px;
     margin: 0 auto;
     padding: 50px;
+    background-color: rgba(191, 247, 191);
   }
   
 h1 {
@@ -17,8 +18,7 @@ h1 {
 .container {
     display: flex;
     justify-content: center;
-    width: 800px;
-    align-items: center;
+    width: 550px;
 }
 
   div.elem-group {
@@ -26,22 +26,20 @@ h1 {
   }
   
   div.elem-group.inlined {
-    width: 49%;
-    float: left;
-    margin-left: 1%;
+    width: 80%;
   }
   
   label {
     display: block;
     padding-bottom: 10px;
-    font-size: 1.25em;
+    font-size: 20px
   }
   
   input, select, textarea {
     border-radius: 2px;
     border: 2px solid #777;
     box-sizing: border-box;
-    font-size: 1.25em;
+    font-size: 20px;
     width: 100%;
     padding: 10px;
   }
@@ -52,11 +50,11 @@ h1 {
   }
   
   textarea {
-    height: 250px;
+    height: 200px;
   }
   
   hr {
-    border: 1px dotted #ccc;
+    border: 1px dotted #fff;
   }
   
   button {
