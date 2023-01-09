@@ -21,12 +21,12 @@ h1 {
     width: 550px;
 }
 
-  div.elem-group {
+  .elem-group {
     margin: 20px 0;
   }
   
-  div.elem-group.inlined {
-    width: 80%;
+  .elem-group.inlined {
+    width: 90%;
   }
   
   label {
@@ -62,7 +62,7 @@ h1 {
     background: green;
     border: none;
     color: white;
-    font-size: 1.25em;
+    font-size: 25px;
     border-radius: 4px;
     cursor: pointer;
   }

@@ -13,13 +13,10 @@
         <h1>Tour booking Animal Kingdom</h1>
       </header>
     </div>
-    <form action="reservation.php" method="post">
       <div class="elem-group">
         <label for="name">Name</label>
         <input
-          type="text"
           id="name"
-          name="visitor_name"
           placeholder="Alex Sanchez"
           pattern="[A-Z\sa-z]{3,20}"
           required
@@ -28,9 +25,7 @@
       <div class="elem-group">
         <label for="email">Your E-mail</label>
         <input
-          type="email"
           id="email"
-          name="visitor_email"
           placeholder="alex.sanchez@email.com"
           required
         />
@@ -40,10 +35,7 @@
         <div class="elem-group inlined">
           <label for="adult">Amount people coming</label>
           <input
-            type="number"
-            id="adult"
-            name="total_adults"
-            placeholder=""
+            id="people"
             min="1"
             required
           />
@@ -52,7 +44,7 @@
       <div class="container">
         <div class="elem-group inlined">
           <label for="checkout-date">Date</label>
-          <input type="date" id="checkout-date" name="checkout" required />
+          <input  id="date" required />
         </div>
       </div>
 
@@ -62,10 +54,9 @@
         <textarea
           id="message"
           name="visitor_message"
-          placeholder="Tell us anything else that might be important."
+          placeholder="Tell us anything important"
         ></textarea>
       </div>
       <button type="submit">Book</button>
-    </form>
   </body>
 </html>

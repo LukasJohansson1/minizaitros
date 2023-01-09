@@ -7,15 +7,18 @@
     scroll-behavior: smooth;
 }
 
-
-body{
+.sec1{
     background-image: url("jungle.jpg");
     background-repeat: no-repeat;
+    height: 1080px;
+    
 }
 
-section{
+.sec2{
     background-image: url("amazon.jpg");
     background-repeat: no-repeat ;
+    height: 1080px;
+
 }
 
 #rub{
@@ -32,17 +35,16 @@ section{
     position: -webkit-sticky;
 	position: sticky;
 	top: 0px;
-    margin-right: 20px;
-    margin-left: 20px;
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
     height: 8vh;
+    z-index: 100;
   }
 
 .topbar a {
     float: right;
-    color: #f2f2f2;
+    color: white;
     text-align: center;
     padding: 20px 22px;
     text-decoration: none;
@@ -56,11 +58,9 @@ section{
 
 .container1{
     display: flex;
-    width: 900px;
+    width: 1000px;
     flex-direction: row;
-    margin-top: 250px;
-    margin-right: auto;
-    margin-left: auto;
+    margin: 250px auto  100px;
     justify-content: center;
     align-items: center;
 
@@ -70,8 +70,7 @@ section{
     display: flex;
     width: 1000px;
     flex-direction: row-reverse;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
     align-items: center;
     justify-content: center;
 
@@ -80,11 +79,85 @@ section{
 .giffers {
     height: 320px;
     width: auto;
-    border-radius: 3%;
 }
 p {
     font-size: 20px;
     color: black;
+}
+
+.hamburger {
+    margin-left: 5px;
+    display: relative;
+    width: 35px;
+    cursor: pointer;
+
+    appearance: none;
+    background: none;
+    outline: none;
+    border: none;
+}
+
+.hamburger .bar, .hamburger:after, .hamburger:before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0px;
+    transition: 0.4s;
+}
+
+.hamburger.is-active:before{
+    transform: rotate(-45deg) translate(-8px, 6px);
+}
+
+.hamburger.is-active:after{
+    transform: rotate(45deg) translate(-9px, -8px);
+}
+
+.hamburger.is-active .bar {
+    opacity: 0;
+}
+
+.mobile-nav {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    min-height: 100vh;
+    z-index: 98;
+    background-color: rgb(95, 228, 95);
+    padding-top: 120px;
+    transition: 0.4s;
+    }
+
+.mobile-nav.is-active {
+    left: 0;
+}
+
+.mobile-nav a {
+        margin: 0 auto 16px;
+        display: block;
+        width: 100%;
+        max-width: 200px;
+        text-align: center;
+        padding: 12px 16px;
+        background-color: white;
+        border-radius: 10px;
+        color: black;
+        text-decoration: none;
+}
+
+@media only screen and (min-width: 769px){
+    .mobile-nav {
+        display: none;
+    }
+
+    .hamburger { 
+        display: none;
+    }
+    
 }
 
 .box{
@@ -97,7 +170,7 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 10px  20px 0 20px;
+    margin: 10px  20px 5px 20px;
 }
 
 #logo{
@@ -112,7 +185,7 @@ p {
     font-size: 35px;
 }
 
-.rule {
+.sec3 {
     background-image: url("jungle2.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -124,7 +197,6 @@ p {
 h5 {
     margin-top: 30px;
     font-size: 50px;
-    margin-bottom: 30px;
 }
 
 .box2 {
@@ -146,4 +218,63 @@ li {
 }
 ul {
     margin: 2em;
+}
+
+@media only screen and (max-width: 768px) {
+
+    .container1{
+        display: flex;
+        width: fit-content;
+        flex-direction: row;
+        margin-top: 250px;
+        margin-right: 0 auto;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container2{
+        display: flex;
+        width: fit-content;
+        flex-direction: row-reverse;
+        margin-left: auto;
+        margin-right: auto;
+        align-items: center;
+        justify-content: center;
+    
+    }
+
+    #rub{
+        margin-left: 30px;
+        margin-right: auto;
+        font-size: 50px;
+        color: white;
+        margin: 0 auto;
+    
+    }
+
+    .topbar a {
+        display: none;
+    }
+
+    .giffers {
+        width: 350px;
+        height: auto;
+    }
+
+    .box {
+        width: 45%;
+
+    }
+
+    .box2 {
+        width: 70%;
+    }
+    h5 {
+        font-size: 35px;
+    }
+
+    .rule {
+        height: 1000px;
+    }
+
 }
