@@ -125,7 +125,7 @@ p {
     top: 0;
     left: 100%;
     width: 100%;
-    min-height: 100vh;
+    max-height: 100vh;
     z-index: 98;
     background-color: rgb(95, 228, 95);
     padding-top: 120px;
