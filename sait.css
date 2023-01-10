@@ -81,7 +81,7 @@ p {
 }
 
 .hamburger {
-  margin-left: 5px;
+  margin-left: 10px;
   display: relative;
   width: 35px;
   cursor: pointer;
@@ -122,7 +122,7 @@ p {
   top: 0;
   left: 100%;
   width: 100%;
-  max-height: 100vh;
+  min-height: 100vh;
   z-index: 98;
   background-color: rgb(95, 228, 95);
   padding-top: 120px;
