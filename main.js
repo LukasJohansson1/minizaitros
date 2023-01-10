@@ -8,6 +8,7 @@ btn.addEventListener("click", function() {
 });
 
 document.querySelectorAll(".link").forEach(n => n.addEventListener("click", () => {
+    
     btn.classList.remove("is-active");
-    menu.classList.remove("is-active")
+    menu.classList.remove("is-active");
 }))
