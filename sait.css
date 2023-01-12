@@ -81,7 +81,7 @@ p {
 }
 
 .hamburger {
-  margin-left: 10px;
+  margin-left: 20px;
   display: relative;
   width: 35px;
   cursor: pointer;
@@ -215,7 +215,20 @@ ul {
   margin: 2em;
 }
 
-@media only screen and (max-width: 820px) {
+footer {
+  display: flex;
+  justify-content: center;
+  height: 100px;
+  align-items: center;
+  background-color: rgb(27, 204, 27);
+}
+
+i {
+  margin: 0 20px 20px 0;
+  font-size: 40px;
+}
+
+@media only screen and (max-width: 912px) {
   .container1 {
     display: flex;
     width: fit-content;
@@ -307,7 +320,7 @@ ul {
   }
 
   .giffers {
-    height: 130px;
+    height: 126px;
     width: auto;
   }
 
@@ -326,11 +339,23 @@ ul {
 
   section {
     width: fit-content;
-    height: auto;
   }
 
-  li,
   p {
-    font-size: 13px;
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  #rub {
+    font-size: 30px;
+  }
+
+  p {
+    font-size: 11px;
+  }
+
+  h5 {
+    font-size: 22px;
   }
 }
