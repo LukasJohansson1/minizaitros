@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Guided tours</title>
-    <link rel="stylesheet" href="formis.css" />
+    <link rel="stylesheet" href="formular.css" />
   </head>
   <body>
     <div class="container">
@@ -13,50 +13,42 @@
         <h1>Tour booking Animal Kingdom</h1>
       </header>
     </div>
-      <div class="elem-group">
-        <label for="name">Name</label>
-        <input
-          id="name"
-          placeholder="Alex Sanchez"
-          pattern="[A-Z\sa-z]{3,20}"
-          required
-        />
+    <div class="boxar">
+      <label for="name">Name</label>
+      <input
+        id="name"
+        placeholder="Alex Sanchez"
+        pattern="[A-Z\sa-z]{3,20}"
+        required
+      />
+    </div>
+    <div class="boxar">
+      <label for="email">Your E-mail</label>
+      <input id="email" placeholder="alex.sanchez@email.com" required />
+    </div>
+    <hr />
+    <div class="container">
+      <div class="boxar inlined">
+        <label for="adult">Amount people coming</label>
+        <input id="people" min="1" required />
       </div>
-      <div class="elem-group">
-        <label for="email">Your E-mail</label>
-        <input
-          id="email"
-          placeholder="alex.sanchez@email.com"
-          required
-        />
+    </div>
+    <div class="container">
+      <div class="boxar inlined">
+        <label for="checkout-date">Date</label>
+        <input id="date" required />
       </div>
-      <hr />
-      <div class="container">
-        <div class="elem-group inlined">
-          <label for="adult">Amount people coming</label>
-          <input
-            id="people"
-            min="1"
-            required
-          />
-        </div>
-      </div>  
-      <div class="container">
-        <div class="elem-group inlined">
-          <label for="checkout-date">Date</label>
-          <input  id="date" required />
-        </div>
-      </div>
+    </div>
 
-      <hr />
-      <div class="elem-group">
-        <label for="message">Do we need to know something else?</label>
-        <textarea
-          id="message"
-          name="visitor_message"
-          placeholder="Tell us anything important"
-        ></textarea>
-      </div>
-      <button type="submit">Book</button>
+    <hr />
+    <div class="boxar">
+      <label for="message">Do we need to know something else?</label>
+      <textarea
+        id="message"
+        name="visitor_message"
+        placeholder="Tell us anything important"
+      ></textarea>
+    </div>
+    <button type="submit">Book</button>
   </body>
 </html>

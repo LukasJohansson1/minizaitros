@@ -1,61 +1,59 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
 }
 
-body {
-    background-image: url("savann.jpg");
-    width: 100vw;
-    height: 100vh;
+section {
+  background-image: url("savann.jpg");
+  width: 100vw;
+  height: 100vh;
 }
 
 .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 iframe {
-    
-    aspect-ratio: 16/9;
-    height: 450px;
-    width: 800px;
-    margin: 20px auto;
+  aspect-ratio: 16/9;
+  height: 450px;
+  width: 800px;
+  margin: 20px auto;
 }
 
 .parent {
-    background-color: #FED766;
-    height: 300px;
-    width: 300px;
-    margin: 0 auto 0px;
+  background-color: #fed766;
+  height: 300px;
+  width: 300px;
+  margin: 0 auto 0px;
 }
 
 .child {
-    height: 50%;
-    width: 50%;
-    animation: left-to-right 1s ease-in forwards infinite alternate;
+  height: 50%;
+  width: 50%;
+  animation: left-to-right 1s ease-in forwards infinite alternate;
 }
 
 .parent:hover .child {
-    animation-play-state: paused;
+  animation-play-state: paused;
 }
 
 @keyframes left-to-right {
-    0% { 
-        background-color: white;
-        transform: translateX(0);
-    }
+  0% {
+    background-color: white;
+    transform: translateX(0);
+  }
 
-    33% {
-        transform: translateY(100%);
-    }
+  33% {
+    transform: translateY(100%);
+  }
 
-    66% {
-        transform: translateX(100%) translateY(100%);
-    }
+  66% {
+    transform: translateX(100%) translateY(100%);
+  }
 
-    100% {
-        background-color: skyblue;
-        transform: translateX(100%);
-    }
+  100% {
+    background-color: skyblue;
+    transform: translateX(100%);
+  }
 }
